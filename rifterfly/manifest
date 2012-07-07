@@ -1,0 +1,2 @@
+Main-Class: rifterfly.RifterFly
+Class-Path: Art.class Box.class Caracal.class Charge.class Drake.class Drone.class Enemy.class ERifter.class Explosion.class Game.class Iteron.class Keys.class Level.class Missile.class Rifter.class RifterFly.class Screen.class Tackle.class Unit.class vector.class

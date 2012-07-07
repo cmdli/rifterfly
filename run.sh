@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp bin rifterfly.RifterFly
+java -cp {CWD}/bin rifterfly.RifterFly
