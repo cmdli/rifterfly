@@ -67,7 +67,7 @@ public class Rifter extends Unit {
 		boolean[] keys = g.keys.keys;
 		vel.x = 0.0;
 		vel.y = 0.0;
-		if(keys[KeyEvent.VK_H]) {
+		if(keys[KeyEvent.VK_H] && energy > 0.0) {
 			speed = 1.5*SPEED_BASE;
 			energy -= WARP_ENERGY*time;
 		}
@@ -137,7 +137,7 @@ public class Rifter extends Unit {
     
     public void shoot(Game g) {
     	
-    	if(shootTime > 0.0)
+    	if(shootTime > 0.0 || energy < TACKLE_ENERGY)
     		return;
     	Tackle t = new Tackle(loc.x+(double)w,loc.y+(double)h/2,g);
     	g.enes.add(t);
