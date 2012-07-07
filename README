@@ -1,0 +1,10 @@
+This is my Arts and Crafts project for Dreddit.
+
+To run, run the batch file "run_windows.bat" (for 
+Windows) or the shell script "run.sh" (Mac OS X or 
+Linux). If you change any code, you need to compile
+it with either "compile.sh" or "compile_windows.bat",
+but if you're changing code you probably already
+know that.
+
+-Omegalisk

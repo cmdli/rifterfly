@@ -1,0 +1,1 @@
+javac -cp src RifterFly.java -d bin

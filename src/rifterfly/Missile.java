@@ -84,7 +84,7 @@ public class Missile extends Unit implements Enemy {
 	public Box[] getCollide() {
 		Box[] bxs = new Box[1];
 		bxs[0] = new Box((int)loc.x,(int)loc.y,w,h);
-		return null;
+		return bxs;
 	}
 
 	public int tackle() {

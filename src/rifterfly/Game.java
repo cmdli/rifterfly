@@ -51,6 +51,7 @@ public class Game {
     	
     	if(!started && keys.keys[KeyEvent.VK_SPACE]) {
     		started = true;
+    		keys.keys[KeyEvent.VK_SPACE] = false;
     	}
     	
     	if(ended && keys.keys[KeyEvent.VK_SPACE]) {
@@ -80,12 +81,7 @@ public class Game {
     	}
     	
     	if(pauseTime <= 0.0) {
-	    	double scroll = 0.0;
-	    	
-	    	if(keys.keys[KeyEvent.VK_J])
-	    		scroll = 4.0*SCREEN_SCROLL*time;
-	    	else
-	    		scroll = SCREEN_SCROLL*time;
+	    	double scroll = SCREEN_SCROLL*time;
 	        screenXP += scroll;
 	        screenX = (int)screenXP;
     	}

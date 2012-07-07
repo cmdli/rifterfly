@@ -27,11 +27,15 @@ public class Tackle extends Unit implements Enemy {
 		nextH += TACKLE_GROWTH*time;
 		h  = (int)(nextH);
 		
+		if(loc.x > game.screenXP + game.w + 50.0)
+			return 1;
+		
 		loc.x += vel.x*time;
 		loc.y += vel.y*time;
 		
 		//Collision Detection
-		for(Enemy e : game.enes){
+		for(int i = 0; i < game.enes.size(); i++){
+			Enemy e = game.enes.get(i);
 			if(e instanceof Unit) {
 				Unit u = (Unit)e;
 				if(collide(this,u)) {

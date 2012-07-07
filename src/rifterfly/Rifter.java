@@ -97,10 +97,7 @@ public class Rifter extends Unit {
 		}
 		
 		if(game.pauseTime <= 0.0){
-		//Scrolling
-		if(keys[KeyEvent.VK_J])
-			vel.x+= 4.0*game.SCREEN_SCROLL;
-		else
+			//Scrolling
 			vel.x += game.SCREEN_SCROLL;
 		}
 		
